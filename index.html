@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="main-header">漢字: Kanji Search</h1>
+
+    <input id="kanji-input" type="text" value="青">
+    <button id="search-button" onclick="getData()">Search</button>
+
+    <div id="display-area">
+        <div>
+            <b>Kanji</b><br>
+            <div id="kanji-character">青</div>
+        </div>
+        <hr>
+        <div>
+            <b>Meaning</b><br>
+            <div id="kanji-meaning">blue, green</div>
+        </div>
+        <hr>
+        <div>
+            <b>kun-reading</b><br>
+            <div id="kun-reading">あお , あお- , あお.い</div>
+        </div>
+        <hr>
+        <div>
+            <b>on-reading</b><br>
+            <div id="on-reading">ショウ , セイ</div>
+        </div>
+        <hr>
+        <div>
+            <b>Former JLPT test level</b><br>
+            <div id="former-jlpt-level">N3</div>
+        </div>
+        <hr>
+        <div>
+            <b>Stroke count</b><br>
+            <div id="stroke-count">8</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
