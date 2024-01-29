@@ -50,6 +50,7 @@ function displayKanji(kanjiObj) {
 
 let body = document.querySelector("body");
 let displayArea = document.querySelector("#display-area");
+let themeSwitchButton = document.querySelector("#theme-switch");
 
 let themeSwitchIcon = document.querySelector('#theme-switch > i');
 
@@ -63,6 +64,7 @@ function changeTheme() {
 
         body.className = "dark";
         displayArea.className = "dark2";
+        themeSwitchButton.className = "light";
 
         themeSwitchIcon.className = sunIconClass;
 
@@ -72,6 +74,7 @@ function changeTheme() {
 
         body.className = "light";
         displayArea.className = "light2";
+        themeSwitchButton.className = "dark2";
 
         themeSwitchIcon.className = moonIconClass;
 
