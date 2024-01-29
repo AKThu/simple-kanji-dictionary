@@ -5,45 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanji Search</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee6f198577.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="light">
+
     <h1 id="main-header">漢字: Kanji Search</h1>
+    
+    <div id="search-holder">
+        <input id="kanji-input" type="text" value="青">
+        <button id="search-button" onclick="getData()">
+            <i class="fa fa-solid fa-search"></i>
+        </button>
+    </div>
 
-    <input id="kanji-input" type="text" value="青">
-    <button id="search-button" onclick="getData()">Search</button>
+    <button id="theme-switch" onclick="changeTheme()">
+        <i class="fa fa-solid fa-moon"></i>
+    </button>
 
-    <div id="display-area">
-        <div>
-            <b>Kanji</b><br>
-            <div id="kanji-character">青</div>
+    <div id="display-area" class="light2">
+        <div class="category-holder">
+            <p class="category-name">Kanji</p>
+            <div id="kanji-character" class="light">
+                <p>青</p>
+            </div>
         </div>
         <hr>
-        <div>
-            <b>Meaning</b><br>
+        <div class="category-holder">
+            <p class="category-name">Meaning</p>
             <div id="kanji-meaning">blue, green</div>
         </div>
         <hr>
-        <div>
-            <b>kun-reading</b><br>
+        <div class="category-holder">
+            <p class="category-name">kun-reading</p>
             <div id="kun-reading">あお , あお- , あお.い</div>
         </div>
         <hr>
-        <div>
-            <b>on-reading</b><br>
+        <div class="category-holder">
+            <p class="category-name">on-reading</p>
             <div id="on-reading">ショウ , セイ</div>
         </div>
         <hr>
-        <div>
-            <b>Former JLPT test level</b><br>
+        <div class="category-holder">
+            <p class="category-name">Former JLPT test level</p>
             <div id="former-jlpt-level">N3</div>
         </div>
         <hr>
-        <div>
-            <b>Stroke count</b><br>
+        <div class="category-holder">
+            <p class="category-name">Stroke count</p>
             <div id="stroke-count">8</div>
         </div>
     </div>
+
 
     <script src="script.js"></script>
 </body>
