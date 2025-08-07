@@ -114,6 +114,6 @@ function changeTheme() {
 
 
 
-fetch('https://kanjiapi.dev/v1/kanji/蜜')
-    .then(data => data.json())
-    .then(kanjiObj => console.log(kanjiObj));
+// fetch('https://kanjiapi.dev/v1/kanji/蜜')
+//    .then(data => data.json())
+//    .then(kanjiObj => console.log(kanjiObj));
